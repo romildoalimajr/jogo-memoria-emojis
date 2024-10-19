@@ -16,6 +16,7 @@ const emojis = [
     "🦝",
     "🦝",
 ];
+
 let openCards = [];
 
 let shuffleEmojis = emojis.sort(() => (Math.random() > 0.5 ? 2 : -1));
@@ -48,9 +49,8 @@ function checkMatch() {
     }
     openCards = [];
 
-    if(document.querySelectorAll("boxMatch").length === emojis.length){
-        alert("Você venceu!...")
+    if (document.querySelectorAll("boxMatch").length === emojis.length) {
+        alert("Você venceu!...");
     }
 }
-    
-;
+

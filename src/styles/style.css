@@ -1,4 +1,4 @@
-body{
+body {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -8,20 +8,18 @@ body{
     user-select: none;
 }
 
-.container{
+.container {
     position: relative;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     gap: 30px;
-    background: linear-gradient(
-        325deg,
-        #03001e 0%,
-        #7303c0 30%,
-        #ec38bc 70%,
-        #fdeff9 100%
-    );
+    background: linear-gradient(325deg,
+            #03001e 0%,
+            #7303c0 30%,
+            #ec38bc 70%,
+            #fdeff9 100%);
     padding: 40px 60px;
 }
 
@@ -31,7 +29,8 @@ h2 {
     text-transform: uppercase;
     letter-spacing: 0.1em;
 }
-.game{
+
+.game {
     width: 430px;
     height: 430px;
     display: flex;
@@ -41,7 +40,7 @@ h2 {
     perspective: 500px;
 }
 
-.item{
+.item {
     position: relative;
     width: 100px;
     height: 100px;
@@ -54,24 +53,31 @@ h2 {
     transition: 0.25s;
 }
 
-.item::after{
+.item::after {
     content: "";
     position: absolute;
     inset: 0;
     background: #404040;
+    background-image: url("../images/KALANGOS.png");
+    background-repeat: no-repeat;
+    background-position: auto;
+    background-size: cover;
     transition: 0.25s;
     transform: rotateY(0deg);
     backface-visibility: hidden;
     /* opacity: 0.85; */
 }
-.item.boxOpen{
+
+.item.boxOpen {
     transform: rotateY(0deg);
 }
+
 .boxOpen::after,
-.boxMatch::after{
+.boxMatch::after {
     transform: rotateY(180deg);
 }
-.reset{
+
+.reset {
     padding: 15px 20px;
     width: 100%;
     color: #000;
@@ -83,9 +89,8 @@ h2 {
     cursor: pointer;
     font-weight: 600;
 }
-.reset:focus{
+
+.reset:focus {
     color: #ec38bc;
     background-color: #262809;
 }
-
-
