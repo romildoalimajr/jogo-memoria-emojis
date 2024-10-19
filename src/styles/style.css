@@ -32,7 +32,6 @@ h2 {
     letter-spacing: 0.1em;
 }
 .game{
-    border: 1px solid red;
     width: 430px;
     height: 430px;
     display: flex;
@@ -59,11 +58,11 @@ h2 {
     content: "";
     position: absolute;
     inset: 0;
-    background-color: #404040;
+    background: #404040;
     transition: 0.25s;
     transform: rotateY(0deg);
-    backface-visibility: hidder;
-    opacity: 0.85;
+    backface-visibility: hidden;
+    /* opacity: 0.85; */
 }
 .item.boxOpen{
     transform: rotateY(0deg);
